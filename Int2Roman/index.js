@@ -8,7 +8,7 @@
   1000: 'M'
 }; */
 
-const LOG = true;
+const LOG = false;
 const output = (data) => LOG && process.stdout.write(data);
 
 /**
@@ -74,7 +74,7 @@ var intToRoman = function(num) {
       return 'X'.repeat(str[0]) + intToRoman(str.substring(1) | 0)
     }
   case 3:
-    d0 = 500 - num; //99
+    d0 = 500 - num;
     d1 = 1000 - num;
     output('c3\n')
     if (num >= 500 && num < 900) {
