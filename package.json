@@ -1,0 +1,81 @@
+{
+  "name": "leetcode",
+  "version": "0.0.0",
+  "description": "My LeetCode solutions",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "cc": "cr -c ./.complexrc",
+    "cc:all": "npm run cc *.js src/*.js",
+    "lint": "eslint -c ./.eslintrc.json R*/*.js S*/*.js V*/*.js --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://Berkmann18@github.com/Berkmann18/LeetCode.git"
+  },
+  "keywords": [
+    "LeetCode",
+    "solutions"
+  ],
+  "author": "Maximilian Berkmann <maxieberkmann@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Berkmann18/LeetCode/issues"
+  },
+  "homepage": "https://github.com/Berkmann18/LeetCode#readme",
+  "devDependencies": {
+    "complexity-report": "^2.0.0-alpha",
+    "cz-adapter-eslint": "^0.2.0",
+    "eslint": "^5.15.1",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-security": "^1.4.0",
+    "eslint-plugin-you-dont-need-lodash-underscore": "^6.4.0",
+    "husky": "^1.3.1",
+    "jest": "^24.1.0",
+    "lint-staged": "^8.1.5"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 9"
+  ],
+  "lint-staged": {
+    "*.js": [
+      "eslint -c ./.eslintrc.json --fix",
+      "git add"
+    ]
+  },
+  "engines": {
+    "node": ">= 7.6.0",
+    "npm": ">= 5.6.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-adapter-eslint"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "jest": {
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "index.js",
+      "src/*.js",
+      "test/*.js",
+      "!**/node_modules/**",
+      "!**/_*.js"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 80,
+        "functions": 90,
+        "lines": 50,
+        "statements": 50
+      }
+    },
+    "testEnvironment": "node"
+  }
+}
