@@ -1,5 +1,5 @@
 const t = require('../t').mt(require('./'));
-const ListNode = require('./list');
+const ListNode = require('../list');
 
 test('#0', () => t([
   new ListNode(2, new ListNode(4, new ListNode(3))),
