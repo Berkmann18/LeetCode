@@ -7,7 +7,7 @@
     "test": "jest",
     "cc": "cr -c ./.complexrc",
     "cc:all": "npm run cc *.js src/*.js",
-    "lint": "eslint -c ./.eslintrc.json A*/*.js M*/*.js R*/*.js S*/*.js V*/*.js --fix"
+    "lint": "eslint -c ./.eslintrc.json **/*.js --fix"
   },
   "repository": {
     "type": "git",
