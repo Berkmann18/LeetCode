@@ -2,7 +2,7 @@
  * @param {number} x
  * @return {number}
  */
-var reverse = function(x) {
+const reverse = (x) => {
   let res = '', num = `${Math.abs(x)}`;
   for (let i of num) res = `${i}${res}`;
   let rev = parseFloat(res);

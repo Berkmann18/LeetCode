@@ -2,7 +2,7 @@
  * @param {string} str
  * @return {number}
  */
-var myAtoi = function(str) {
+const myAtoi = (str) => {
   const MIN = -2147483648,
     MAX = 2147483647
   let [, sign, other, digits] = /^ *([\+|\-]?)(\D*)(\d*)/.exec(str)

@@ -15,7 +15,7 @@ const output = (data) => LOG && process.stdout.write(data);
  * @param {number} num
  * @return {string}
  */
-var intToRoman = function(num) {
+const intToRoman = (num) => {
   /*
   len := length of num
   if len === 1

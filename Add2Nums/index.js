@@ -5,7 +5,7 @@ const ListNode = require('./list');
  * @param {ListNode} l2
  * @return {ListNode}
  */
-var addTwoNumbers = function(l1, l2) {
+const addTwoNumbers = (l1, l2) => {
   let res = new ListNode(0),
     head = res,
     sum = 0,

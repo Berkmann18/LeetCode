@@ -3,7 +3,7 @@
  * @param {string} num2
  * @return {string}
  */
-var addStrings = function(num1, num2) {
+const addStrings = (num1, num2) => {
   let carry = 0,
     sum = '';
   for (let i = num1.length - 1, j = num2.length - 1; i >= 0 || j >= 0 || carry > 0; --i, --j) {
