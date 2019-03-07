@@ -15,8 +15,8 @@ const merge = (a, b) => {
     sorted.push(aIsBigger ? b[indexB++] : a[indexA++])
   }
 
-  const bDone = indexB < b.length;
-  sorted = sorted.concat(bDone ? b.slice(indexB) : a.slice(indexA))
+  const bUnfinished = indexB < b.length;
+  sorted = sorted.concat(bUnfinished ? b.slice(indexB) : a.slice(indexA))
 
   return sorted;
 };
