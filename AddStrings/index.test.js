@@ -1,3 +1,3 @@
-const t = (a, b, ac) => expect(require('./')(a, b)).toStrictEqual(ac)
+const t = require('../t').mt(require('./'));
 
-test('#0', () => t('0', '0', '0'));
+test('#0', () => t(['0', '0'], '0'));

@@ -1,5 +1,4 @@
-const T = fn => (ex, ac) => expect(fn(ex)).toStrictEqual(ac)
-const t = T(require('./'));
+const t = require('../t').t(require('./'));
 
 test('ex.1', () => t('0', true));
 test('ex.2', () => t(' 0.1 ', true));

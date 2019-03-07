@@ -1,34 +1,11 @@
-/**
- * Definition for singly-linked list.
- * function ListNode(val) {
- *     this.val = val;
- *     this.next = null;
- * }
- */
+const ListNode = require('./list');
+
 /**
  * @param {ListNode} l1
  * @param {ListNode} l2
  * @return {ListNode}
  */
 var addTwoNumbers = function(l1, l2) {
-  /* let r1 = '',
-    r2 = '',
-    n1 = l1,
-    n2 = l2;
-
-  while(n1 !== null) {
-    r1 = `${n1.val}${r1}`;
-    n1 = n1.next;
-  }
-  while(n2 !== null) {
-    r2 = `${n2.val}${r2}`;
-    n2 = n2.next;
-  }
-
-  let res = (`${parseFloat(r1) + parseFloat(r2)}`).split('').reverse()
-  let nodes = res.map(num => new ListNode(num))
-  for (let i = 0; i < nodes.length - 1; ++i) nodes[i].next = nodes[i + 1]
-  return nodes[0] */
   let res = new ListNode(0),
     head = res,
     sum = 0,
