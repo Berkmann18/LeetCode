@@ -14,15 +14,7 @@ const isPalindrome = (x) => {
  */
 const longestPalindrome = (s) => {
   if (s.length <= 1) return s;
-  let len = s.length,
-    longest = s[0];
-  /*
-    L = len(s) - 1
-    longestPali = ''
-    for start in [0:L]:
-      for end in [start + 1:L]:
-        if s[start:end] isPalindrome && (end - start) > len(longestPali): longestPali = s[start:end]
-  */
+  let len = s.length;
   for (let start = 0; start < len - 1; ++start) {
     for (let end = start + 1; end < len; ++end) {
       let str = s.substring(start, end + 1);
