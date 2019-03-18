@@ -4,7 +4,7 @@
  * @param {number[]} b Final point
  * @returns {number} Distance
  */
-const euclideanDist = (a, b) => Math.sqrt(Math.pow(a[0] - b[0], 2) + Math.pow(a[1] - b[1], 2));
+const euclideanDist = (a, b) => Math.sqrt((a[0] - b[0])**2 + (a[1] - b[1])**2);
 
 /**
  * @param {number[][]} points
