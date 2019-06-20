@@ -1,0 +1,15 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "pretty": true,
+    "strict": true,
+    "target": "es6",
+    "lib": ["es6"],
+    "removeComments": true,
+    "declaration": true,
+    // "outDir": "./dist",
+    "rootDir": "./",
+    "module": "system",
+    "moduleResolution": "node"
+  }
+}
