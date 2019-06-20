@@ -1,14 +1,23 @@
 {
   "env": {
     "node": true,
-    "browser": true
+    "browser": true,
+    "jest": true
   },
+  "plugins": [
+    "security",
+    "jquery",
+    "@typescript-eslint"
+  ],
   "extends": [
+    "eslint:recommended",
     "plugin:security/recommended",
     "plugin:you-dont-need-lodash-underscore/compatible",
-    "plugin:node/recommended"
+    "plugin:node/recommended",
+    "plugin:@typescript-eslint/recommended"
   ],
   "rules": {
+    "@typescript-eslint/indent": "off",
     "indent": [
       "error",
       2
@@ -16,8 +25,9 @@
     "linebreak-style": [
       "error"
     ],
-    "no-console": "warn",
+    "no-console": "off",
     "no-extra-semi": "off",
+    "node/no-unsupported-features/es-syntax": "off",
     "prefer-const": "off",
     "quotes": [
       "error",
@@ -30,6 +40,7 @@
       "warn"
     ]
   },
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "sourceType": "module",
     "ecmaVersion": 8
