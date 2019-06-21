@@ -1,5 +1,5 @@
 const reverseNodes = require('./index').default;
-const Node = require('./listNode').default;
+const Node = require('../../listNode').default;
 
 test('Default', () => {
   const one = new Node(1, new Node(2, new Node(3, new Node(4, new Node(5)))));

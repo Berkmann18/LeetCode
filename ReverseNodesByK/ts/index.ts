@@ -1,4 +1,4 @@
-import ListNode from './listNode';
+import ListNode from '../../listNode';
 type LN = ListNode | null | undefined;
 
 const reverseKGroup = (head: ListNode, k: number): ListNode => {
