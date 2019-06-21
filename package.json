@@ -4,13 +4,15 @@
   "description": "My LeetCode solutions",
   "main": "index.js",
   "scripts": {
+    "start:ts": "ts-node",
+    "start": "node",
     "test": "jest",
     "cc": "cr -c ./.complexrc",
     "cc:all": "npm run cc *.js src/*.js",
     "lint": "eslint -c ./.eslintrc.json **/*.{js,ts} --fix",
     "fmt": "prettier --config .prettierrc.json --ignore-path .prettierignore --write",
     "build": "tsc --build tsconfig.json",
-    "build:watch": "tsc --ext .ts --watch"
+    "build:watch": "tsc --watch"
   },
   "repository": {
     "type": "git",
@@ -27,6 +29,8 @@
   },
   "homepage": "https://github.com/Berkmann18/LeetCode#readme",
   "devDependencies": {
+    "@types/jest": "^24.0.15",
+    "@types/node": "^12.0.8",
     "@typescript-eslint/eslint-plugin": "^1.10.2",
     "@typescript-eslint/parser": "^1.10.2",
     "complexity-report": "^2.0.0-alpha",
@@ -40,6 +44,8 @@
     "jest": "^24.8.0",
     "lint-staged": "^8.2.0",
     "prettier": "^1.18.2",
+    "ts-jest": "^24.0.2",
+    "ts-node": "^8.3.0",
     "typescript": "^3.5.1"
   },
   "browserslist": [
