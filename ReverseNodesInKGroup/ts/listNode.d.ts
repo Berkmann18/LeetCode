@@ -4,5 +4,6 @@ declare class ListNode {
   public next: LN | undefined;
   public constructor(x: number, next?: LN);
   public toString(): string;
+  public print(): string;
 }
 export default ListNode;

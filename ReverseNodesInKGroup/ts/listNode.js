@@ -1,22 +1,23 @@
-System.register([], function(exports_1, context_1) {
-  'use strict';
-  var ListNode;
-  var __moduleName = context_1 && context_1.id;
-  return {
-    setters: [],
-    execute: function() {
-      ListNode = class ListNode {
-        constructor(x, next = null) {
-          this.val = -9999;
-          this.val = x;
-          this.next = next;
-        }
-        toString() {
-          const fw = this.next != null ? '->' : '';
-          return `${this.val}${fw}`;
-        }
-      };
-      exports_1('default', ListNode);
+'use strict';
+Object.defineProperty(exports, '__esModule', {value: true});
+class ListNode {
+  constructor(x, next = null) {
+    this.val = -9999;
+    this.val = x;
+    this.next = next;
+  }
+  toString() {
+    const fw = this.next != null ? '->' : '';
+    return `${this.val}${fw}`;
+  }
+  print() {
+    let current = this;
+    let out = '';
+    while (current != null) {
+      out += current;
+      current = current.next;
     }
-  };
-});
+    return out;
+  }
+}
+exports.default = ListNode;

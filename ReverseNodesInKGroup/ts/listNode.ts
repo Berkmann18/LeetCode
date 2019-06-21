@@ -12,6 +12,17 @@ class ListNode {
     const fw: string = this.next != null ? '->' : '';
     return `${this.val}${fw}`;
   }
+
+  public print(): string {
+    let current: LN = this;
+    let out = '';
+    while (current != null) {
+      out += current;
+      current = current.next as LN;
+    }
+    // console.log(out);
+    return out;
+  }
 }
 
 export default ListNode;
