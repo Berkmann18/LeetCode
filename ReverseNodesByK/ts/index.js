@@ -1,7 +1,7 @@
 'use strict';
 Object.defineProperty(exports, '__esModule', {value: true});
 const reverseKGroup = (head, k) => {
-  if (k <= 1) return head;
+  if (k <= 1 || !head) return head;
   const reversedNodes = new Array(k);
   let current = head;
   let index = k - 1;

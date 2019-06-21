@@ -36,3 +36,7 @@ test('k=5', () => {
   const one = new Node(1, new Node(2, new Node(3, new Node(4, new Node(5)))));
   expect(reverseNodes(one, 5).print()).toEqual('5->4->3->2->1');
 });
+
+test('[]', () => {
+  expect(reverseNodes(null, 2)).toEqual(null);
+});

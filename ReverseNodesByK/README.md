@@ -1,0 +1,1 @@
+This challenges was originally for the [Reverse nodes in K group](https://leetcode.com/problems/reverse-nodes-in-k-group/) challenge but I misunderstood the requirement and decided to keep the work I did as I may encounter a challenge which would be solved with my solution.
