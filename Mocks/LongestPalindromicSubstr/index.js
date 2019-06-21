@@ -1,24 +1,25 @@
-const isPalindrome = (x) => {
+const isPalindrome = x => {
   if (x < 0) return false;
   let s = '' + x,
-    len = s.length / 2 | 0;
+    len = (s.length / 2) | 0;
   for (let i = 0; i < len; ++i) {
     if (s[i] !== s[s.length - 1 - i]) return false;
   }
-  return true
+  return true;
 };
 
 /**
  * @param {string} s
  * @return {string}
  */
-const longestPalindrome = (s) => {
+const longestPalindrome = s => {
   if (s.length <= 1) return s;
-  let len = s.length;
+  let len = s.length,
+    longest = s[0];
   for (let start = 0; start < len - 1; ++start) {
     for (let end = start + 1; end < len; ++end) {
       let str = s.substring(start, end + 1);
-      if (str.length > longest.length && isPalindrome(str)) longest = str
+      if (str.length > longest.length && isPalindrome(str)) longest = str;
     }
   }
   return longest;
