@@ -21,3 +21,18 @@ test('k=2', () => {
   const one = new Node(1, new Node(2, new Node(3, new Node(4, new Node(5)))));
   expect(reverseNodes(one, 2).print()).toEqual('2->1->3->4->5');
 });
+
+test('k=3', () => {
+  const one = new Node(1, new Node(2, new Node(3, new Node(4, new Node(5)))));
+  expect(reverseNodes(one, 3).print()).toEqual('3->2->1->4->5');
+});
+
+test('k=4', () => {
+  const one = new Node(1, new Node(2, new Node(3, new Node(4, new Node(5)))));
+  expect(reverseNodes(one, 4).print()).toEqual('4->3->2->1->5');
+});
+
+test('k=5', () => {
+  const one = new Node(1, new Node(2, new Node(3, new Node(4, new Node(5)))));
+  expect(reverseNodes(one, 5).print()).toEqual('5->4->3->2->1');
+});
