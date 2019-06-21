@@ -2,6 +2,7 @@ import ListNode from './listNode';
 type LN = ListNode | null | undefined;
 
 const reverseKGroup = (head: ListNode, k: number): ListNode => {
+  if (k <= 1) return head;
   const reversedNodes: ListNode[] = new Array(k);
   let current: LN = head;
   let index: number = k - 1;
