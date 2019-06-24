@@ -1,3 +1,5 @@
 doc
 dist
 */ts/*.js
+ReverseNodesInKGroup/*.js
+Roman2Int/*.js
