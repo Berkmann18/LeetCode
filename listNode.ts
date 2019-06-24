@@ -2,7 +2,7 @@ type LN = ListNode | null;
 
 class ListNode {
   public val: number = -9999;
-  public next: LN | undefined;
+  public next: LN;
   public constructor(x: number, next: LN = null) {
     this.val = x;
     this.next = next;
