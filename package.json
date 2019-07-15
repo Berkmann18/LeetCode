@@ -22,7 +22,10 @@
     "LeetCode",
     "solutions"
   ],
-  "author": "Maximilian Berkmann <maxieberkmann@gmail.com>",
+  "author": {
+    "name": "Maximilian Berkmann",
+    "email": "maxieberkmann@gmail.com"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Berkmann18/LeetCode/issues"
