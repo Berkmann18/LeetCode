@@ -56,7 +56,7 @@ const romanToInt = (s) => {
         const nextIsBigger = i < tokens.length - 1 && conv(tokens[i]) < conv(tokens[i + 1]);
         nextIsBigger ? setBucket(`${tokens[i]}${tokens[++i]}`) : setBucket(tokens[i]);
     }
-    const bucketSum = Object.entries(bucket).map(entry => entry[1] * conv(entry[0]));
+    const bucketSum = Object.entries(bucket).map((entry) => entry[1] * conv(entry[0]));
     return bucketSum.reduce((acc, val) => acc + val, 0);
 };
 exports.default = romanToInt;
