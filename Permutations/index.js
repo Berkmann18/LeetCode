@@ -1,7 +1,7 @@
 'use strict';
-Object.defineProperty(exports, '__esModule', { value: true });
+Object.defineProperty(exports, '__esModule', {value: true});
 const rmEl = (arr, idx) => arr.filter((_el, i) => i !== idx);
-const permute = (nums) => {
+const permute = nums => {
   let perms = [];
   switch (nums.length) {
   case 0:
@@ -11,10 +11,7 @@ const permute = (nums) => {
     return [nums, [nums[1], nums[0]]];
   default:
     for (let i = 0; i < nums.length; ++i) {
-      const p = permute(rmEl(nums, i)).map((arr) => [
-        nums[i],
-        ...arr
-      ]);
+      const p = permute(rmEl(nums, i)).map(arr => [nums[i], ...arr]);
       perms = perms.concat(p);
     }
     return perms;
